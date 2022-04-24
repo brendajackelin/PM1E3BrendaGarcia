@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_mostrar"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:clickable="true"
+    android:layout_marginTop="10dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:background="@drawable/shape_card"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtcodigoMostrar"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="16sp"
+            android:src="@drawable/medicamento"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:width="2dp"
+            android:gravity="right"
+            android:text="Descripcion: "
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtDescripcionMostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="4dp"
+            android:text="Descripcion"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+
+            <TextView
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="4dp"
+                android:width="2dp"
+                android:gravity="right"
+                android:text="Cantidad: "
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtCantidadMostrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="4dp"
+                android:text="Cantidad"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="4dp"
+            android:width="2dp"
+            android:gravity="right"
+            android:text="Hora: "
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtHoraMostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="4dp"
+            android:text="Hora"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp">
+
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="4dp"
+            android:width="2dp"
+            android:gravity="right"
+            android:text="Periocidad: "
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtPeriodoMostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="4dp"
+            android:text="Periocidad"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Modificar"
+            android:textSize="14dp"/>
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:text="Eliminar"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

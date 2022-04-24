@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    tools:context=".vista.MainActivity">
+
+        <TextView
+            android:text="REGISTRAR MEDICAMENTO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/medicamento" />
+
+    <Button
+        android:id="@+id/btnFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Tomar Foto" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:paddingTop="20dp"
+        android:hint="DESCRIPCION"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/txtCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="CANTIDAD"
+        android:inputType="number"
+        android:paddingTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:text="TIEMPO:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+
+            android:textAlignment="center"
+            android:textSize="18dp"/>
+
+        <Spinner
+            android:id="@+id/spTiempo"
+            android:layout_width="166dp"
+            android:layout_height="41dp"
+            android:ems="10"
+            android:gravity="start|top" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/txtPeriodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="PERIOCIDAD"
+        android:inputType="number"
+        android:enabled="false"
+        android:paddingTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:text="GUARDAR" />
+
+        <Button
+            android:id="@+id/btnMedicamentos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:text="MEDICAMENTOS" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
